@@ -21,5 +21,8 @@
     "ts-node": "^8.10.1",
     "typescript": "^3.9.3"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "gitHead": "f4b97042218ba3f79ff12ca963ff15bffbd2e78d"
 }
