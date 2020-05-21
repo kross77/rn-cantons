@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/bottom-sheet",
-  "version": "0.62.2002",
+  "version": "0.62.2003",
   "types": "dist/src/index.d.ts",
   "main": "dist/src/index.js",
   "author": "Ales Krasouski",
