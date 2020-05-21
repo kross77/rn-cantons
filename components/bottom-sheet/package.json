@@ -1,0 +1,26 @@
+{
+  "name": "@rn-cantons/bottom-sheet",
+  "version": "1.0.0",
+  "types": "dist/src/index.d.ts",
+  "main": "dist/src/index.js",
+  "author": "Ales Krasouski",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.tsx",
+    "compile": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "@kross77/react-native-layout": "^1.0.10",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-reanimated": "^1.8.0"
+  }
+}

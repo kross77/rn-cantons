@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "components/*",
+    "nativeComponents/*",
+    "sandbox/*"
+  ],
+  "version": "0.62.2001",
+  "npmClient": "yarn",
+  "useWorkspaces": true
+}
