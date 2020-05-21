@@ -4,7 +4,7 @@
     "nativeComponents/*",
     "sandbox/*"
   ],
-  "version": "0.62.2001",
+  "version": "0.62.2002",
   "npmClient": "yarn",
   "useWorkspaces": true
 }

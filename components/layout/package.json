@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/layout",
-  "version": "0.62.2001",
+  "version": "0.62.2002",
   "types": "dist/src/index.d.ts",
   "main": "dist/src/index.js",
   "author": "Ales Krasouski",
