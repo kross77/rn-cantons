@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/bottom-sheet",
-  "version": "0.62.2003",
+  "version": "0.62.2004",
   "description": "This is bottom sheet drag menu. Writed on React native, working on IOS and Android",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/kross77/rn-cantoms"
   },
-   "bugs": {
+  "bugs": {
     "url": "https://github.com/kross77/rn-cantoms/issues"
   },
   "homepage": "https://github.com/kross77/rn-cantoms",
