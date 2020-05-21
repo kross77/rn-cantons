@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/bottom-sheet",
-  "version": "1.0.0",
+  "version": "0.62.2001",
   "types": "dist/src/index.d.ts",
   "main": "dist/src/index.js",
   "author": "Ales Krasouski",
@@ -22,5 +22,6 @@
     "@kross77/react-native-layout": "^1.0.10",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-reanimated": "^1.8.0"
-  }
+  },
+  "gitHead": "33bc4ad0e5221a0ead8cafbf366d6846666a1a3f"
 }
