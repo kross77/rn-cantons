@@ -1,4 +1,6 @@
 .DS_Store
 .vscode
 node_modules/
+components/*/dist
 yarn-error.log
+.idea
