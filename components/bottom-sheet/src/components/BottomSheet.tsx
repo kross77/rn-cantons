@@ -51,6 +51,8 @@ class BottomSheet extends React.Component<BottomSheet, State> {
     getSnapshotBeforeUpdate(prevProps, prevState){
         if(this.props.openLink?.value){
             this.bs.current?.snapTo(2)
+        }else{
+            this.bs.current?.snapTo(1)
         }
     }
 

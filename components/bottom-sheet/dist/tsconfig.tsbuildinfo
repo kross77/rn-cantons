@@ -332,7 +332,7 @@
         "affectsGlobalScope": false
       },
       "../src/components/bottomsheet.tsx": {
-        "version": "3011d21929029c1e086bf6774348af60380a5f941525e748da11d9e5f5a14fcf",
+        "version": "0ede1a4afca7ef93de434f1db545517c8eecd1a6093859602810b698808f5f0b",
         "signature": "9a8366ff8460ccdb3ac9dd9c176fcdfd2da4503d9e80edd2b87d67404fdfa2d9",
         "affectsGlobalScope": false
       },
