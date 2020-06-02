@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/react-native-utils",
-  "version": "0.62.2004",
+  "version": "0.62.2005",
   "description": "This is bottom sheet drag menu. Writed on React native, working on IOS and Android",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
@@ -39,8 +39,8 @@
     "typescript": "3.9.3"
   },
   "dependencies": {
-    "@rn-cantons/layout": "0.62.2004",
-    "@react-native-community/netinfo": "^5.9.0"
+    "@react-native-community/netinfo": "^5.9.0",
+    "@rn-cantons/layout": "^0.62.2005"
   },
   "publishConfig": {
     "access": "public"

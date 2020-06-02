@@ -1,6 +1,6 @@
 {
   "name": "mobile",
-  "version": "0.62.2002",
+  "version": "0.62.2005",
   "private": true,
   "scripts": {
     "android": "node_modules/.bin/react-native run-android",
@@ -11,8 +11,8 @@
     "lint": "node_modules/.bin/eslint ../.."
   },
   "dependencies": {
-    "@rn-cantons/bottom-sheet": "0.62.2004",
-    "@rn-cantons/layout": "0.62.2004",
+    "@rn-cantons/bottom-sheet": "^0.62.2005",
+    "@rn-cantons/layout": "^0.62.2005",
     "faker": "^4.1.0",
     "react": "16.11.0",
     "react-native": "0.62.2",

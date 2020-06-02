@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/modals",
-  "version": "0.62.2004",
+  "version": "0.62.2005",
   "description": "This is bottom sheet drag menu. Writed on React native, working on IOS and Android",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
@@ -35,9 +35,9 @@
     "react-native": "*"
   },
   "devDependencies": {
+    "react-native": "0.62.2",
     "ts-node": "^8.10.1",
-    "typescript": "3.9.3",
-    "react-native": "0.62.2"
+    "typescript": "3.9.3"
   },
   "dependencies": {
     "@kross77/react-native-layout": "^1.0.10",

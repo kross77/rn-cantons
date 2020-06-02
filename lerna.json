@@ -5,7 +5,7 @@
     "sandbox/*",
     "projects/*"
   ],
-  "version": "0.62.2004",
+  "version": "0.62.2005",
   "npmClient": "yarn",
   "useWorkspaces": true
 }

@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/category-list",
-  "version": "0.62.2004",
+  "version": "0.62.2005",
   "description": "This is bottom sheet drag menu. Writed on React native, working on IOS and Android",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
@@ -39,7 +39,7 @@
     "typescript": "3.9.3"
   },
   "dependencies": {
-    "@rn-cantons/layout": "0.62.2004",
+    "@rn-cantons/layout": "^0.62.2005",
     "firebase": "^7.14.2",
     "react-firebase-hooks": "2.1.1",
     "styled-components": "3.2.3"
