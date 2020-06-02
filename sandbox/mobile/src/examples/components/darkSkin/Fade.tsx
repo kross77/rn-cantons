@@ -28,8 +28,9 @@ const Fade = React.forwardRef(({isOpen, position, minimizePopup}: Fade, ref: any
                 position: 'absolute',
                 width: '100%',
                 height: '100%',
+                backgroundColor: 'rgba(255,0,0,0.25)'
             }}
-            activeOpacity={0}
+            activeOpacity={1}
             onPress={minimizePopup}
         />
 

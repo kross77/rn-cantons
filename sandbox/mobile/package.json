@@ -11,8 +11,8 @@
     "lint": "node_modules/.bin/eslint ../.."
   },
   "dependencies": {
-    "@rn-cantons/bottom-sheet": "^1.0.0",
-    "@rn-cantons/layout": "^1.0.0",
+    "@rn-cantons/bottom-sheet": "0.62.2004",
+    "@rn-cantons/layout": "0.62.2004",
     "faker": "^4.1.0",
     "react": "16.11.0",
     "react-native": "0.62.2",

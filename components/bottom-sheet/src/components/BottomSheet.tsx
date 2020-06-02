@@ -2,12 +2,14 @@ import ReanimatedBottomSheet from './ReanimatedBottomSheet'
 import React from "react";
 import Reanimated from "react-native-reanimated";
 import {BottomSheetSkin} from "../skin";
+import {SingleLink} from "@rn-cantons/react-link";
 
 interface BottomSheet {
     children: JSX.Element | JSX.Element[]
     height: number
     headerHeight?: number
     skin?: BottomSheetSkin
+    openLink?: SingleLink<boolean>
 }
 
 
@@ -21,15 +23,17 @@ class BottomSheet extends React.Component<BottomSheet, State> {
     viewRef = React.createRef();
     bs: any = React.createRef();
 
+
     state = {
         isOpen: false
     }
 
     renderContent = () => {
         const RenderSkin = this.props.skin || BottomSheetSkin;
+        const openLink = this.getOpenLink();
         return (
             <RenderSkin.Content
-                isOpen={this.state.isOpen}
+                isOpen={openLink?.value}
                 openPopup={() => this.bs.current?.snapTo(2)}
                 height={this.props.height}
             >
@@ -37,14 +41,35 @@ class BottomSheet extends React.Component<BottomSheet, State> {
             </RenderSkin.Content>
         )
     }
+
+    componentDidMount(){
+        if(this.props.openLink?.value){
+            this.bs.current?.snapTo(2)
+        }
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState){
+        if(this.props.openLink?.value){
+            this.bs.current?.snapTo(2)
+        }
+    }
+
+    getOpenLink = () => this.props.openLink || {
+        set: (value) => this.setState({
+            isOpen: value,
+        }),
+        value: this.state.isOpen,
+    };
+
     render() {
         const RenderSkin = this.props.skin || BottomSheetSkin;
+        const openLink = this.getOpenLink();
         return (
             <RenderSkin.Wrapper
-                isOpen={this.state.isOpen}
+                isOpen={openLink.value}
                 fade={
                     <RenderSkin.Fade
-                        isOpen={this.state.isOpen}
+                        isOpen={openLink.value}
                         minimizePopup={() => this.bs.current.snapTo(1)}
                         position={this.position}
                     />
@@ -54,10 +79,10 @@ class BottomSheet extends React.Component<BottomSheet, State> {
                         ref={this.bs}
                         callbackNode={this.position}
                         enabledBottomInitialAnimation={false}
-                        snapPoints={[this.props.height, this.props.headerHeight || 80]}
+                        snapPoints={[this.props.height, this.props.headerHeight === undefined ? 80 : this.props.headerHeight]}
                         initialSnap={1}
-                        onOpenStart={() => this.setState({isOpen: true})}
-                        onCloseEnd={() => this.setState({isOpen: false})}
+                        onOpenStart={() => openLink.set(true)}
+                        onCloseEnd={() => openLink.set(false)}
                         renderContent={this.renderContent}
                     />
                 }

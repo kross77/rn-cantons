@@ -36,15 +36,16 @@
   },
   "devDependencies": {
     "ts-node": "^8.10.1",
-    "typescript": "^3.9.3"
+    "typescript": "3.9.3"
   },
   "dependencies": {
     "@kross77/react-native-layout": "^1.0.10",
+    "@rn-cantons/react-link": "0.62.2004",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-reanimated": "^1.8.0"
   },
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "7d4780c2551ab0ede41a61cb7288a5e7116db193"
+  "gitHead": "d26e71b5a389405fc96b4233970cf5093c45aca8"
 }

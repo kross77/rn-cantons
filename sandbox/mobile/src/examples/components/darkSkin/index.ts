@@ -3,8 +3,6 @@ import Content from './Content'
 import Fade from './Fade'
 import Wrapper from './Wrapper'
 
-
-
 interface Skin {
      Content: React.ComponentType<Content>
      Fade: React.ComponentType<Fade>

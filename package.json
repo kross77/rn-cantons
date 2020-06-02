@@ -5,7 +5,8 @@
     "packages": [
       "sandbox/*",
       "components/*",
-      "nativeComponents/*"
+      "nativeComponents/*",
+      "projects/*"
     ],
     "nohoist": []
   },

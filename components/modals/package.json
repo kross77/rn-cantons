@@ -1,0 +1,50 @@
+{
+  "name": "@rn-cantons/modals",
+  "version": "0.62.2004",
+  "description": "This is bottom sheet drag menu. Writed on React native, working on IOS and Android",
+  "scripts": {
+    "start": "tsc -p tsconfig.json --watch",
+    "compile": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kross77/rn-cantoms"
+  },
+  "bugs": {
+    "url": "https://github.com/kross77/rn-cantoms/issues"
+  },
+  "homepage": "https://github.com/kross77/rn-cantoms",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/src/index.d.ts",
+  "main": "dist/src/index.js",
+  "author": "Ales Krasouski",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-native",
+    "typescript",
+    "layout",
+    "snap",
+    "bottom menu"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "ts-node": "^8.10.1",
+    "typescript": "3.9.3",
+    "react-native": "0.62.2"
+  },
+  "dependencies": {
+    "@kross77/react-native-layout": "^1.0.10",
+    "reselect": "^4.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "d26e71b5a389405fc96b4233970cf5093c45aca8"
+}

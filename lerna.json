@@ -2,7 +2,8 @@
   "packages": [
     "components/*",
     "nativeComponents/*",
-    "sandbox/*"
+    "sandbox/*",
+    "projects/*"
   ],
   "version": "0.62.2004",
   "npmClient": "yarn",
