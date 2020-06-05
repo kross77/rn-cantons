@@ -34,6 +34,9 @@
     "react": "*",
     "react-native": "*"
   },
+  "dependencies": {
+    "@rn-cantons/react-link": "0.62.2006",
+  },
   "publishConfig": {
     "access": "public"
   },

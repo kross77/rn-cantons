@@ -2,14 +2,6 @@ import { useState } from "react";
 
 export type Link<T extends any> = [T, (v: T) => void];
 
-export const updateObject = <T extends {}>([value, setValue]: Link<T>): ObjectLink<T> => ({
-    value,
-    update: (updatedValue: Partial<T>) => setValue({ ...value, ...updatedValue }),
-    set: (newValue: T) => setValue({ ...newValue  }),
-    cb: (key: string) => (updated: any) => setValue({ ...value, [key]: updated }),
-    inputCb: (key: string) => (e: any) => setValue({ ...value, [key]: e.target.value }),
-});
-
 
 export const createArrayLinkInterface = <T extends any>([value, setValue]: Link<
     T[]
@@ -57,13 +49,6 @@ export const updateSingle = <T extends any>([value, setValue]: Link<T>) => ({
     cb: (value: T) => () => setValue(value)
 });
 
-export interface ObjectLink<T> {
-    update: (updatedValue: Partial<T>) => void;
-    set: (value: T) => void;
-    value: T;
-    cb: Function;
-    inputCb: Function;
-}
 
 export interface ArrayLink<T> {
     update: (index: number, updatedValue: T) => void;
@@ -79,11 +64,6 @@ export interface SingleLink<T> {
     cb: (value: T) => () => void;
     value: T;
 }
-
-export const useObjectLink = <T>(initState: T | (() => T)): ObjectLink<T> => {
-    const value = useState(initState);
-    return updateObject(value);
-};
 
 export const useArrayLink = <T>(initState: T[] | (() => T[])): ArrayLink<T> => {
     const value = useState<T[]>(initState);
