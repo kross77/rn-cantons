@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+export * as useObjectLink from './useObjectLink'
 export type Link<T extends any> = [T, (v: T) => void];
 
 
