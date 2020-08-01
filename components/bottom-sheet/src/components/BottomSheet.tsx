@@ -2,6 +2,7 @@ import ReanimatedBottomSheet from './ReanimatedBottomSheet'
 import React from "react";
 import Reanimated from "react-native-reanimated";
 import {BottomSheetSkin} from "../skin";
+//@ts-ignore
 import {SingleLink} from "@rn-cantons/react-link";
 
 interface BottomSheet {
