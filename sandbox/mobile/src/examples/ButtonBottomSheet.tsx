@@ -1,21 +1,22 @@
 import React, {useEffect, useState} from 'react';
 import {Animated, Button, SafeAreaView, StyleSheet, Text, View} from 'react-native';
-import {Colors, Header,} from 'react-native/Libraries/NewAppScreen';
-import Test from '@rn-cantons/layout'
-import DarkSkin from './components/darkSkin'
-import {BottomSheet} from '@rn-cantons/bottom-sheet'
+import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
+import Test from '@rn-cantons/layout';
+import DarkSkin from './components/darkSkin';
+import {BottomSheet} from '@rn-cantons/bottom-sheet';
 import {useSingleLink} from "@rn-cantons/react-link";
 
-const ScrollBottomSheet = () => {
+const ScrollBottomSheet = ({zIndex = 0}) => {
     const [hideAnimation] = useState(new Animated.Value(0));
     const openLink = useSingleLink(false);
 
     useEffect(() => {
         Animated.spring(hideAnimation, {toValue: openLink.value ? 1 : 0, useNativeDriver: true}).start();
     }, [openLink.value])
+
     return (
         <>
-            <SafeAreaView>
+            <SafeAreaView zIndex={zIndex}>
                 <Header/>
                 {global.HermesInternal == null ? null : (
                     <View style={styles.engine}>
@@ -31,12 +32,11 @@ const ScrollBottomSheet = () => {
                     openLink,
                     headerHeight: 0,
                     height: 500,
+                    zIndex: zIndex + 1,
                     children: <Text>This is working</Text>
-                }}/>
+                }} />
             {/*</Animated.View>*/}
-
         </>
-
     );
 };
 
