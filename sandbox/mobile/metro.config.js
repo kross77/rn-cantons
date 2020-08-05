@@ -8,7 +8,7 @@ const path = require('path')
 
 module.exports = {
   transformer: {
-    // projectRoot: path.resolve(__dirname, '../../'),
+    watchFolders: [path.resolve(__dirname, '../../')],
     getTransformOptions: async () => ({
       transform: {
         experimentalImportSupport: false,

@@ -2,6 +2,7 @@ import ReanimatedBottomSheet from './ReanimatedBottomSheet'
 import React from "react";
 import Reanimated from "react-native-reanimated";
 import {BottomSheetSkin} from "../skin";
+//@ts-ignore
 import {SingleLink} from "@rn-cantons/react-link";
 
 interface BottomSheet {
@@ -19,10 +20,9 @@ interface State {
 
 class BottomSheet extends React.Component<BottomSheet, State> {
     value = 0;
-    position = new Reanimated.Value(0)
+    position = new Reanimated.Value(1)
     viewRef = React.createRef();
     bs: any = React.createRef();
-
 
     state = {
         isOpen: false
@@ -54,6 +54,7 @@ class BottomSheet extends React.Component<BottomSheet, State> {
         }else{
             this.bs.current?.snapTo(1)
         }
+        return true;
     }
 
     getOpenLink = () => this.props.openLink || {
@@ -66,6 +67,7 @@ class BottomSheet extends React.Component<BottomSheet, State> {
     render() {
         const RenderSkin = this.props.skin || BottomSheetSkin;
         const openLink = this.getOpenLink();
+
         return (
             <RenderSkin.Wrapper
                 isOpen={openLink.value}
@@ -82,7 +84,7 @@ class BottomSheet extends React.Component<BottomSheet, State> {
                         callbackNode={this.position}
                         enabledBottomInitialAnimation={false}
                         snapPoints={[this.props.height, this.props.headerHeight === undefined ? 80 : this.props.headerHeight]}
-                        initialSnap={1}
+                        initialSnap={openLink.value ? 0 : 1}
                         onOpenStart={() => openLink.set(true)}
                         onCloseEnd={() => openLink.set(false)}
                         renderContent={this.renderContent}
