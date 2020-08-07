@@ -92,6 +92,7 @@ export const useModals = () => {
 
 const Modals = ({ children, close, keyboardHeight, ...props }) => {
   const arrayLink = useArrayLink<any>([]);
+
   const modelLink = {
     ...arrayLink,
     add: (item, onClose) => {
@@ -131,7 +132,7 @@ const Modals = ({ children, close, keyboardHeight, ...props }) => {
     return (
       <ModalItem
           close={close}
-        visibleLink={{
+          visibleLink={{
           value: modelLink.value[index],
           set: v => {
             if (v) {
