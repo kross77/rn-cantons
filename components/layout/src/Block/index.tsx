@@ -1,8 +1,9 @@
-import styled from 'styled-components/native'
+import styled from 'styled-components'
 import withDevice from './withDevice'
 import withMultiSize from './withMultiSize'
 import { applyProps, combineProps, separateLiteralToProps } from '../utils/literalUtils'
 import React from "react";
+import {View} from "react-native";
 
 export const multiplier = (v: string | number, addPx = true) => {
   v = withMultiSize(v);
@@ -177,6 +178,6 @@ const blockProps = combineProps(
   superProps
 );
 
-const Block:React.ComponentType<Partial<Block>> = applyProps(styled.View, blockProps);
+const Block:React.ComponentType<Partial<Block>> = applyProps(styled(View), blockProps);
 
 export default Block

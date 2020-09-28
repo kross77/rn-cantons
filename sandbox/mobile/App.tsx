@@ -1,3 +1,4 @@
 import ButtonBottomSheet from './src/examples/ButtonBottomSheet'
+import LayoutTest from './src/examples/LayoutTest'
 
-export default ButtonBottomSheet
+export default LayoutTest
