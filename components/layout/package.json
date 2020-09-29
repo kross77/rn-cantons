@@ -1,7 +1,7 @@
 {
   "name": "@rn-cantons/layout",
   "version": "0.62.2008",
-  "description": "This is bottom sheet drag menu. Writed on React native, working on IOS and Android",
+  "description": "This is layout system",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
     "compile": "tsc -p tsconfig.json",
