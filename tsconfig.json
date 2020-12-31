@@ -1,5 +1,11 @@
 {
   "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "noEmit": true,
+    "target": "ESNext"
+  },
   "include": [".*.js", "**/*.js", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

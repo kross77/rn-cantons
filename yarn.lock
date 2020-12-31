@@ -2716,13 +2716,6 @@
     history "^4.7.2"
     query-string "^6.2.0"
 
-"@rn-cantons/layout@0.62.2008":
-  version "0.62.2008"
-  resolved "https://registry.yarnpkg.com/@rn-cantons/layout/-/layout-0.62.2008.tgz#e3d11abcdbfa28d501ae93cce6440dc9e6d0756b"
-  integrity sha512-6e+yXxYynxgxQj3WlvLGc5d1ibmeI61PbSWVAtQkLZmJbPF4QTEV+4KoezxYOiUuUdIuKpJb1/sZp4EiZQKI3w==
-  dependencies:
-    styled-components "5.1.0"
-
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"
   resolved "https://registry.npmjs.org/@rollup/plugin-node-resolve/-/plugin-node-resolve-7.1.3.tgz#80de384edfbd7bfc9101164910f86078151a3eca"
