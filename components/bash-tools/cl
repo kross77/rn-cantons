@@ -1,0 +1,4 @@
+ext=`echo "$1" | cut -d'.' -f2`
+newfile=`echo "$3"."$ext"`
+cp -rf $1 $newfile
+sed -i '' -e 's+'$2'+'$3'+g' $newfile

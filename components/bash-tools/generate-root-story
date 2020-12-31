@@ -1,0 +1,4 @@
+mdfind .stories.tsx -onlyin ./$1 > stories.ts
+sed -i '' 's+'$PWD'+.+g' stories.ts
+sed -i '' 's+.tsx++g' stories.ts
+sed -E -i '' 's/(.*)/import "\1"/g' stories.ts

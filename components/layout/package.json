@@ -1,0 +1,48 @@
+{
+  "name": "@rn-cantons/layout",
+  "version": "0.62.2009",
+  "description": "This is layout system",
+  "scripts": {
+    "start": "tsc -p tsconfig.json --watch",
+    "compile": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kross77/rn-cantoms"
+  },
+  "bugs": {
+    "url": "https://github.com/kross77/rn-cantoms/issues"
+  },
+  "homepage": "https://github.com/kross77/rn-cantoms",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/src/index.d.ts",
+  "main": "dist/src/index.js",
+  "author": "Ales Krasouski",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-native",
+    "typescript",
+    "layout",
+    "snap",
+    "bottom menu"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "ts-node": "^8.10.1",
+    "typescript": "3.9.3"
+  },
+  "dependencies": {
+    "styled-components": "5.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "51dcc6170cc76aea064b16bbec60d6d45cacf38f"
+}

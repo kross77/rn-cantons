@@ -1,0 +1,51 @@
+{
+  "name": "@rn-cantons/modalize",
+  "version": "0.62.2010",
+  "description": "This is bottom sheet drag menu. Write on React native, working on IOS and Android",
+  "scripts": {
+    "start": "tsc -p tsconfig.json --watch",
+    "compile": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kross77/rn-cantons"
+  },
+  "bugs": {
+    "url": "https://github.com/kross77/rn-cantoms/issues"
+  },
+  "homepage": "https://github.com/kross77/rn-cantons",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/src/index.d.ts",
+  "main": "dist/src/index.js",
+  "author": "Ales Krasouski",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-native",
+    "typescript",
+    "layout",
+    "snap",
+    "bottom menu"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-gesture-handler": "*"
+  },
+  "devDependencies": {
+    "ts-node": "^8.10.1",
+    "typescript": "3.9.3"
+  },
+  "dependencies": {
+    "@rn-cantons/layout": "^0.62.2009",
+    "@rn-cantons/react-link": "^0.62.2009",
+    "react-native-modalize": "^2.0.8"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "51dcc6170cc76aea064b16bbec60d6d45cacf38f"
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"cancelComment.js","sourceRoot":"","sources":["../../../../src/ApplicationForm/configs/cancelComment.ts"],"names":[],"mappings":"AAAA,eAAe;IACb;QACE,OAAO,EAAE;YACP,SAAS,EAAE,QAAQ;YACnB,KAAK,EAAE,SAAS;YAChB,SAAS,EAAE,KAAK;YAChB,WAAW,EAAE,yBAAyB;YACtC,QAAQ,EAAE,IAAI;YACd,IAAI,EAAE,MAAM;SACb;KACF;CACF,CAAC"}

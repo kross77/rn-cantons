@@ -1,0 +1,1 @@
+{"version":3,"file":"authorization.js","sourceRoot":"","sources":["../../../../src/ApplicationForm/configs/authorization.ts"],"names":[],"mappings":"AAAA,eAAe;IACb;QACE,KAAK,EAAE;YACL,SAAS,EAAE,OAAO;YAClB,KAAK,EAAE,SAAS;YAChB,WAAW,EAAE,oBAAoB;YACjC,QAAQ,EAAE,IAAI;YACd,IAAI,EAAE,OAAO;YACb,UAAU,EAAE,eAAe;SAC5B;KACF;CACF,CAAC"}
