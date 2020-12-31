@@ -32,17 +32,17 @@
   ],
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-gesture-handler": "*",
+    "react-native-reanimated": "*"
   },
   "devDependencies": {
     "ts-node": "^8.10.1",
     "typescript": "3.9.3"
   },
   "dependencies": {
-    "@kross77/react-native-layout": "^1.0.10",
     "@rn-cantons/react-link": "^0.62.2009",
-    "react-native-gesture-handler": "^1.6.1",
-    "react-native-reanimated": "^1.8.0",
+    "@rn-cantons/layout": "^0.62.2009",
     "reanimated-bottom-sheet": "^1.0.0-alpha.20"
   },
   "publishConfig": {
