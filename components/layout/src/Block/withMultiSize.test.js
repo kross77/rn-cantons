@@ -1,12 +1,11 @@
 import { Dimensions } from 'react-native'
-import withMultiSize from './withMultiSize.android'
-import {getSize} from './withMultiSize.android'
+import withMultiSize, { getSize } from './withMultiSize.android'
 
 const SizesArr = {
   XS: 300,
   SM: 370,
   MD: 375,
-  LG: 768
+  LG: 768,
 }
 
 test('withMultiSize: {xs: 100} -> on xs', () => {
@@ -51,11 +50,13 @@ test('withMultiSize: {md: 100} -> on lg', () => {
 
 test('withMultiSize: {xs: 0.5, sm: 1, md: 1.25} -> on xs', () => {
   // console.log('GET_SIZE', getSize(SizesArr.XS, 420));
-  expect(withMultiSize({ xs: 0.5, sm: 1, md: 1.25 }, SizesArr.XS, 420)).toBe(0.5)
+  expect(withMultiSize({ xs: 0.5, sm: 1, md: 1.25 }, SizesArr.XS, 420)).toBe(
+    0.5,
+  )
 })
 
 test('withMultiSize: {xs: 0.5, sm: 1, md: 1.25} -> on sm', () => {
-  //console.log('GET_SIZE', getSize(SizesArr.SM, 600))
+  // console.log('GET_SIZE', getSize(SizesArr.SM, 600))
   expect(withMultiSize({ xs: 0.5, sm: 1, md: 1.25 }, SizesArr.SM, 600)).toBe(1)
 })
 

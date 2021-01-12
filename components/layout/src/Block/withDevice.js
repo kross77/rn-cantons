@@ -1,9 +1,12 @@
 // import { Dimensions } from 'react-native';
 import getDeviceSize from './util/deviceSize'
+
 const { width, height } = getDeviceSize()
 
-const dw = (value, addPx) => `${(width * Number(value) / 100)}${addPx ? 'px' : ''}`
-const dh = (value, addPx) => `${(height * Number(value) / 100)}${addPx ? 'px' : ''}`
+const dw = (value, addPx) =>
+  `${(width * Number(value)) / 100}${addPx ? 'px' : ''}`
+const dh = (value, addPx) =>
+  `${(height * Number(value)) / 100}${addPx ? 'px' : ''}`
 
 const withDevice = (v, addPx = true) => {
   // console.log('withDevice', {v});
