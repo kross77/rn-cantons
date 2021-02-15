@@ -11,3 +11,6 @@ export { default as replaceVars } from './utils/replaceVars';
 export { default as throttle } from './utils/throttle';
 export { default as upgrade } from './utils/upgrade';
 export { default as wrap } from './utils/wrap';
+export { default as inRange } from './utils/inRange';
+export { default as between } from './utils/between';
+export { default as DelayRender } from './components/DelayRender';
