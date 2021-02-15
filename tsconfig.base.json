@@ -13,6 +13,6 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ESNext"
+    "target": "es5"
   }
 }

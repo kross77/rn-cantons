@@ -6,7 +6,8 @@
     "packages": [
       "packages/*",
       "components/*",
-      "projects/*"
+      "projects/*",
+      "projects/*/functions"
     ]
   },
   "scripts": {
@@ -16,6 +17,11 @@
     "lint": "eslint .",
     "studio": "yarn workspace mobile studio",
     "test": "yarn workspaces run test",
+    "config": "yarn config:ios && yarn config:android",
+    "config:ci": "yarn config:ios --token '$FIREBASE_TOKEN' && yarn config:android --token '$FIREBASE_TOKEN'",
+    "config:ios": "firebase apps:sdkconfig iOS > ios/GoogleService-Info.plist",
+    "config:android": "firebase apps:sdkconfig Android > android/app/google-services.json",
+    "tcp": "adb reverse tcp:8081 tcp:8081 && adb reverse tcp:7007 tcp:7007 ",
     "xcode": "yarn workspace mobile xcode"
   },
   "devDependencies": {
@@ -33,7 +39,8 @@
     "husky": "4.3.0",
     "lint-staged": "10.5.1",
     "prettier": "2.2.0",
-    "typescript": "4.1.2"
+    "typescript": "4.1.2",
+    "lerna": "^3.21.0"
   },
   "husky": {
     "hooks": {

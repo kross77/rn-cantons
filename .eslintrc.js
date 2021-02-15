@@ -20,10 +20,13 @@ module.exports = {
   rules: {
     'global-require': 'off',
     'no-bitwise': 'off',
+    'no-alert': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-redeclare': 'off',
     '@typescript-eslint/no-shadow': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     'import/prefer-default-export': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react-hooks/rules-of-hooks': 'off',

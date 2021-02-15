@@ -1,11 +1,11 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "jsx": "preserve",
+    "jsx": "react",
+    "skipLibCheck": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "noEmit": true,
-    "target": "ESNext"
+    "target": "es5"
   },
-  "include": [".*.js", "**/*.js", "**/*.ts", "**/*.tsx"],
+//  "include": [".*.js", "**/*.js", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
