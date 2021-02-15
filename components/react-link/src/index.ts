@@ -1,7 +1,10 @@
 import { useState } from 'react'
+import { ObjectLink as OL } from './useObjectLink'
 
 export { useObjectLink } from './useObjectLink'
 export type Link<T extends any> = [T, (v: T) => void]
+
+export type ObjectLink<T> = OL<T>
 
 export const createArrayLinkInterface = <T extends any>([value, setValue]: Link<
   T[]
