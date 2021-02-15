@@ -1,83 +1,55 @@
-import * as GoogleSignIn from 'expo-google-sign-in';
-import createStructuredSelector from "radar/js/createStructuredSelector";
-import {createSelector} from "reselect";
+import GoogleSignIn from './components/GoogleSignIn'
+import { createSelector, createStructuredSelector } from 'reselect'
 
-
-
-const firebaseAuth = async (firebaseApp, idToken) => {
-    if(firebaseApp){
-        const credential = firebaseApp.auth.GoogleAuthProvider.credential(idToken);
-        try{
-            let result = await firebaseApp.auth().signInWithCredential(credential);
-            console.log('app auth result', result.additionalUserInfo)
-        }catch (e) {
-            alert(e.message)
-        }
-
+const firebaseAuth = async (firebaseApp: any, idToken: string | undefined) => {
+  if (firebaseApp) {
+    const credential = firebaseApp.auth.GoogleAuthProvider.credential(idToken)
+    try {
+      await firebaseApp.auth().signInWithCredential(credential)
+    } catch (e) {
+      alert(e.message)
     }
+  }
 }
 
-const googleSignInit = (p) => async (clientId, firebaseApp) => {
-    await GoogleSignIn.initAsync({
-        // You may ommit the clientId when the firebase `googleServicesFile` is configured
-        clientId,
-    });
+const googleSignInit = (p: any) => async (clientId: string) => {
+  await GoogleSignIn.initAsync({
+    // You may ommit the clientId when the firebase `googleServicesFile` is configured
+    clientId,
+  })
 
-    const googleSignInResponseUser = await GoogleSignIn.signInSilentlyAsync();
-    p.update('googleSignInResponseUser', googleSignInResponseUser)
-    // return await firebaseAuth(firebaseApp, googleSignInResponseUser?.auth?.idToken)
+  const googleSignInResponseUser = await GoogleSignIn.signInSilentlyAsync()
+  p.update('googleSignInResponseUser', googleSignInResponseUser)
 }
 
-
-const googleSignIn = (p) => {
-    return async (firebaseApp) => {
-        await GoogleSignIn.askForPlayServicesAsync();
-        try{
-            const { type, user } = await GoogleSignIn.signInAsync();
-            console.log({type, user})
-            console.log(user?.auth?.accessToken)
-
-            p.update('googleSignInResponseUser', user)
-            await firebaseAuth(firebaseApp, user?.auth?.idToken)
-        }catch(e: any){
-            alert(e.message)
-        }
-
-
+const googleSignIn = (p: any) => {
+  return async (firebaseApp: any) => {
+    await GoogleSignIn.askForPlayServicesAsync()
+    try {
+      const { user } = await GoogleSignIn.signInAsync()
+      p.update('googleSignInResponseUser', user)
+      await firebaseAuth(firebaseApp, user?.auth?.idToken)
+    } catch (e) {
+      alert(e.message)
     }
-
+  }
 }
-const googleSignOut = (p) => {
-    return async (firebase) => {
-        await GoogleSignIn.signOutAsync();
-        p.update('googleSignInResponseUser', null)
-        firebase.auth().signOut()
-    }
-
+const googleSignOut = (p: any) => {
+  return async (firebase: any) => {
+    await GoogleSignIn.signOutAsync()
+    p.update('googleSignInResponseUser', null)
+    firebase.auth().signOut()
+  }
 }
-let user = p => p.value.googleSignInResponseUser;
+const user = (p: any) => p.value.googleSignInResponseUser
 const googleSign = createStructuredSelector({
-    init: googleSignInit,
-    signIn: googleSignIn,
-    signOut: googleSignOut,
-    // user,
-    fullName: createSelector(
-        user,
-        (user) => user ? user.displayName : null,
-    ),
-    avatar: createSelector(
-        user,
-        (user) => user?.photoURL || null,
-    ),
-    email: createSelector(
-        user,
-        (user) => user?.email || null,
-    ),
-    authorized: createSelector(
-        user,
-        (user) => !!user,
-    ),
+  init: googleSignInit,
+  signIn: googleSignIn,
+  signOut: googleSignOut,
+  fullName: createSelector(user, (user) => (user ? user.displayName : null)),
+  avatar: createSelector(user, (user) => user?.photoURL || null),
+  email: createSelector(user, (user) => user?.email || null),
+  authorized: createSelector(user, (user) => !!user),
 })
 
-
-export default googleSign;
+export default googleSign

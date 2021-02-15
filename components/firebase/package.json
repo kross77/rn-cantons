@@ -1,7 +1,7 @@
 {
   "name": "@rn-cantons/firebase",
   "version": "0.62.2006",
-  "description": "This is bottom sheet drag menu. Writed on React native, working on IOS and Android",
+  "description": "Firebase utils",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
     "compile": "tsc -p tsconfig.json",
@@ -18,8 +18,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/src/index.d.ts",
-  "main": "dist/src/index.js",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
   "author": "Ales Krasouski",
   "license": "MIT",
   "keywords": [
@@ -39,8 +39,9 @@
   },
   "gitHead": "51dcc6170cc76aea064b16bbec60d6d45cacf38f",
   "dependencies": {
+    "@rn-cantons/react-link": "0.62.2009",
     "expo-google-sign-in": "^8.1.0",
-    "firebase": "^7.14.5",
+    "firebase": "8.2.7",
     "geofirex": "^0.1.0",
     "reselect": "^4.0.0",
     "rxjs": "^6.5.5"

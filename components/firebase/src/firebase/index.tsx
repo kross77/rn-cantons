@@ -1,14 +1,29 @@
 import firebase from 'firebase'
+import { createStructuredSelector } from 'reselect'
+// @ts-ignore
+import { ObjectLink } from '@rn-cantons/react-link/dist/useObjectLink'
 import firebaseUser from './firebaseUser'
-import googleSign from './googleSign'
-import createStructuredSelector from "radar/js/createStructuredSelector";
+import initFB from './initFirebase'
 
-export const firebaseSelector = createStructuredSelector({
-    firebaseUser,
-    googleSign
+
+interface FirebaseLink {
+  initialized: boolean
+  user: any
+}
+
+export const firebaseSelector = createStructuredSelector<any, any>({
+  user: firebaseUser,
+  // googleSign,
+  init: (link: ObjectLink<FirebaseLink>) => (config: any) => {
+    if (!link.value.initialized) {
+      initFB(config)
+      link.update({ initialized: true })
+    }
+  },
 })
 
-export const firebaseApp = firebase;
+export * from './callFunction'
+export const firebaseApp = firebase
+export const initFirebase = initFB
 
-
-export default firebaseSelector;
+export default firebaseSelector
