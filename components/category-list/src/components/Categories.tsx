@@ -1,6 +1,6 @@
 import React from 'react'
 import renderList from "../utils/rendersList";
-import Layout from "@kross77/react-native-layout";
+import Layout from "@rn-cantons/layout";
 
 interface Categories extends Layout{
     Label: React.ComponentType

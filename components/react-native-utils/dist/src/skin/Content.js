@@ -1,5 +1,5 @@
 import { TouchableOpacity } from "react-native";
-import Layout from "@kross77/react-native-layout";
+import Layout from "@rn-cantons/layout";
 import React from "react";
 const Content = ({ isOpen, openPopup, height, children }) => (React.createElement(TouchableOpacity, { disabled: isOpen, onPress: openPopup, activeOpacity: 1 },
     React.createElement(Layout, { w: true, h: height, ac: true, white: true, style: { borderTopLeftRadius: 30, borderTopRightRadius: 30 } },
