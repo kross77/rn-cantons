@@ -18,8 +18,7 @@ interface State {
 
 class BottomSheet extends React.Component<BottomSheet, State> {
   value = 0
-
-  position = new Reanimated.Value(1)
+  position: any = new Reanimated.Value(1)
 
   viewRef = React.createRef()
 
@@ -71,7 +70,6 @@ class BottomSheet extends React.Component<BottomSheet, State> {
   render() {
     const RenderSkin = this.props.skin || BottomSheetSkin
     const openLink = this.getOpenLink()
-
     return (
       <RenderSkin.Wrapper
         isOpen={openLink.value}

@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../src/skin/scrollView/index.ts"],"names":[],"mappings":"AAAA,OAAO,iBAAiB,MAAM,WAAW,CAAA;AACzC,OAAO,WAAW,MAAM,eAAe,CAAA;AACvC,OAAO,UAAU,MAAM,cAAc,CAAA;AASrC,MAAM,yBAAyB,GAA8B;IACzD,OAAO,EAAE,iBAAiB;IAC1B,UAAU;IACV,WAAW;CACd,CAAA;AAED,eAAe,yBAAyB,CAAA"}

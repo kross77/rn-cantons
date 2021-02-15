@@ -5,6 +5,7 @@
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
     "compile": "tsc -p tsconfig.json",
+    "b": "tsc -b --verbose",
     "watch": "tsc -p tsconfig.json --watch"
   },
   "repository": {
@@ -38,7 +39,7 @@
   },
   "devDependencies": {
     "ts-node": "^8.10.1",
-    "typescript": "3.9.3"
+    "typescript": "4.1.2"
   },
   "dependencies": {
     "@rn-cantons/react-link": "^0.62.2009",
