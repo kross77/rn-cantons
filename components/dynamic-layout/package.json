@@ -1,0 +1,45 @@
+{
+  "name": "@rn-cantons/dynamic-layout",
+  "version": "0.62.2009",
+  "description": "This is layout system",
+  "scripts": {
+    "start": "tsc -p tsconfig.json --watch",
+    "compile": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kross77/rn-cantons"
+  },
+  "bugs": {
+    "url": "https://github.com/kross77/rn-cantons/issues"
+  },
+  "homepage": "https://github.com/kross77/rn-cantons",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/src/index.d.ts",
+  "main": "dist/src/index.js",
+  "author": "Ales Krasouski",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-native",
+    "typescript",
+    "layout",
+    "snap",
+    "bottom menu"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "typescript": "4.1.2"
+  },
+  "dependencies": {
+    "use-error-boundary": "^2.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "51dcc6170cc76aea064b16bbec60d6d45cacf38f"
+}
