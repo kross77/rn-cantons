@@ -5,6 +5,11 @@
   "workspaces": {
     "packages": [
       "packages/*",
+      "features/*",
+      "features/*/functions",
+      "features/*/web-component",
+      "features/*/mobile-component",
+      "features/*/tg-bot",
       "components/*",
       "projects/*",
       "projects/*/functions"

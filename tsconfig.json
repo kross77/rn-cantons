@@ -1,6 +1,7 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
+    "module": "CommonJS",
     "jsx": "react",
     "skipLibCheck": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
