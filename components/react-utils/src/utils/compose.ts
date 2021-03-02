@@ -1,4 +1,4 @@
-const compose = (...funcs: Function[]): Function =>
+export const compose = (...funcs: any[]): any =>
   funcs.reduce(
     (a, b) => (...args: any) => a(b(...args)),
     (arg: any) => arg,

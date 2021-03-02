@@ -1,4 +1,4 @@
-import Layout from './Layout'
+import Layout from './components/messaging'
 import Layout2 from './LayoutWeb'
 
 export const LayoutWeb = Layout2

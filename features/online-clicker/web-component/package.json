@@ -1,20 +1,23 @@
 {
-  "name": "@rn-cantons/layout",
+  "name": "@rn-cantons/online-clicker-webcomponent",
   "version": "0.62.2009",
+  "proxy": "https://localhost:5000",
   "description": "This is layout system",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
     "compile": "tsc -p tsconfig.json",
+    "build": "webpack && yarn post-build",
+    "dev": "webpack serve",
     "watch": "tsc -p tsconfig.json --watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kross77/rn-cantoms"
+    "url": "https://github.com/kross77/rn-cantons"
   },
   "bugs": {
-    "url": "https://github.com/kross77/rn-cantoms/issues"
+    "url": "https://github.com/kross77/rn-cantons/issues"
   },
-  "homepage": "https://github.com/kross77/rn-cantoms",
+  "homepage": "https://github.com/kross77/rn-cantons",
   "files": [
     "dist"
   ],
@@ -37,10 +40,16 @@
   "devDependencies": {
     "@rn-cantons/react-utils": "0.62.2009",
     "@types/styled-components": "^5.1.7",
+    "html-webpack-plugin": "^5.2.0",
+    "ts-loader": "^8.0.17",
     "ts-node": "^8.10.1",
-    "typescript": "4.1.2"
+    "typescript": "4.1.2",
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0"
   },
   "dependencies": {
+    "http-proxy-middleware": "^1.0.6",
+    "react-dom": "^17.0.1",
     "styled-components": "5.1.0"
   },
   "publishConfig": {

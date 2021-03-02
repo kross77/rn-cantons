@@ -15,6 +15,7 @@ const user = (p: any) => p.value?.firebaseUser
 
 const authSelector = createStructuredSelector<ObjectLink<any>, any>({
   listen,
+  user,
   authentication: createSelector(user, (user) => user === null),
   authenticated: createSelector(user, (user) => !!user),
   userId: createSelector(user, (user) => user?.id),

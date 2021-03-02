@@ -6,6 +6,40 @@ export type Link<T extends any> = [T, (v: T) => void]
 
 export type ObjectLink<T> = OL<T>
 
+export class ObjectLinkState<T> implements ObjectLink<T> {
+  state: T
+
+  constructor(defaultValue: T) {
+    this.state = defaultValue
+  }
+
+  update(updatedValue: Partial<T>): void {
+    this.state = { ...this.state, ...updatedValue }
+  }
+
+  toString(): string {
+    //
+    return String(this.state)
+  }
+
+  set(value: T): void {
+    this.state = value
+  }
+
+  get value(): T {
+    return this.state
+  }
+
+  cb(updatedPropName: string): any {
+    return (updatedValue: any) =>
+      // @ts-ignore
+      this.update({ [updatedPropName]: updatedValue })
+  }
+}
+
+export const createObjectLink = <T>(defaultState: T) =>
+  new (class implements ObjectLink<T> {})()
+
 export const createArrayLinkInterface = <T extends any>([value, setValue]: Link<
   T[]
 >): ArrayLink<T> => {

@@ -1,5 +1,5 @@
 {
-  "name": "@rn-cantons/layout",
+  "name": "@rn-cantons/web-notifications-feature",
   "version": "0.62.2009",
   "description": "This is layout system",
   "scripts": {
@@ -34,15 +34,18 @@
     "react": "*",
     "react-native": "*"
   },
-  "devDependencies": {
-    "@rn-cantons/react-utils": "0.62.2009",
-    "@types/styled-components": "^5.1.7",
-    "ts-node": "^8.10.1",
-    "typescript": "4.1.2"
-  },
   "dependencies": {
+    "@rn-cantons/react-link": "^0.62.2009",
+    "@rn-cantons/ts-utils": "^0.62.2009",
+    "firebase": "8.2.7",
+    "jest": "^26.6.3",
+    "reselect": "^4.0.0",
     "styled-components": "5.1.0"
   },
+  "devDependencies": {
+    "typescript": "4.1.2"
+  },
+
   "publishConfig": {
     "access": "public"
   },

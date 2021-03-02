@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import React from 'react'
-import { Platform, View } from 'react-native'
 import withDevice from './withDevice'
 import withMultiSize from './withMultiSize'
 import {
@@ -10,6 +9,7 @@ import {
 } from '../utils/literalUtils'
 
 export const multiplier = (v: string | number, addPx = true) => {
+  // eslint-disable-next-line no-param-reassign
   v = withMultiSize(v)
   return withDevice(v, addPx)
 }
@@ -92,9 +92,12 @@ const param = (name: string, paramName: string | undefined = undefined) => ({
   if (value !== null && value !== undefined) {
     return `${paramName || name}: ${multiplier(value)};`
   }
+  return undefined
 }
 
 const widthProps = separateLiteralToProps`
+    display: flex;
+    flex-direction: column;
 	${({ w }: Block) =>
     w === true ? 'width: 100%;' : w ? `width: ${multiplier(w)} ;` : undefined}
 	${({ h }: Block) =>
@@ -199,7 +202,7 @@ const blockProps = combineProps(
 )
 
 const Block: React.ComponentType<Partial<Block>> = applyProps(
-  styled(View),
+  styled.div,
   blockProps,
 )
 
