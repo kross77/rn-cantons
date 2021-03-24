@@ -18,7 +18,7 @@
     ],
     "rewrites": [
       {
-        "source": "api/config",
+        "source": "/api/config",
         "function": "getConfig"
       },
       {

@@ -7,6 +7,9 @@ module.exports = {
   mode: 'development',
   devServer: {
     port: 3332,
+    proxy: {
+      '/api': 'http://localhost:5000',
+    },
   },
   module: {
     rules: [
@@ -33,6 +36,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'public/index.html',
     }),
-  ],
-
+  ]
 }

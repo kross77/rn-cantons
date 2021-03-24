@@ -1,11 +1,12 @@
 import firebase from 'firebase'
-import { useSingleLink } from '@rn-cantons/react-link'
+import { useArrayLink, useSingleLink } from '@rn-cantons/react-link'
 import 'firebase/firestore'
-import { useEffect } from 'react'
-import useConfig from './useAdminConfig'
+import React, { useEffect } from 'react'
+import { debounce, throttle } from '@rn-cantons/react-utils'
+import useConfig from './useConfig'
 
 interface Clicker {
-  clicksPropertyName: string
+  clicksPropertyName?: string
   clickTableName: string
   settingsTableName: string
 }
@@ -16,12 +17,27 @@ interface Click {
   location?: string
 }
 
+interface ReactOnlyProps {
+  condition: boolean
+  children: React.ReactChildren
+  preloader: React.ReactElement | null
+}
+
+export const RenderOnly = ({
+  condition,
+  children,
+  preloader = null,
+}: ReactOnlyProps) => {
+  return condition ? children : preloader
+}
+
 const useAnonymousAuth = (): any => {
   const userLink = useSingleLink<any>(null)
 
   useEffect(() => {
     firebase.auth().signInAnonymously()
     return firebase.auth().onAuthStateChanged((user) => {
+      console.log('useAnonymousAuth', { user })
       if (user) {
         userLink.set(user)
       } else {
@@ -35,15 +51,13 @@ const useAnonymousAuth = (): any => {
 
 const useClicker = (params: Clicker) => {
   const totalClicksLink = useSingleLink(0)
-  const clicksLink = useSingleLink<Click[]>([])
-  const auth = useAnonymousAuth()
-
-  const config = useConfig()
+  const timerId = useSingleLink(null)
+  const clicksLink = useArrayLink<Click[]>([])
+  const user = useAnonymousAuth()
 
   useEffect(() => {
-    console.log({ config })
-    if (config) {
-      firebase
+    if (user?.uid) {
+      return firebase
         .firestore()
         .collection(params.settingsTableName)
         .doc(params.clicksPropertyName)
@@ -53,14 +67,18 @@ const useClicker = (params: Clicker) => {
           }
         })
     }
-  }, [config])
+  }, [user?.uid])
+
+  useEffect(() => {
+    timerId.set({})
+  }, [clicksLink.value])
 
   return {
-    total: totalClicksLink.value,
-    couldClick: auth?.user?.uid,
+    total: totalClicksLink.value + clicksLink.value.length,
+    couldClick: user?.uid,
     click: () => {
-      clicksLink.value.push({
-        user: auth?.user?.uid,
+      clicksLink.add({
+        user: user?.uid,
         date: new Date(),
       })
     },
