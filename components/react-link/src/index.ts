@@ -37,9 +37,6 @@ export class ObjectLinkState<T> implements ObjectLink<T> {
   }
 }
 
-export const createObjectLink = <T>(defaultState: T) =>
-  new (class implements ObjectLink<T> {})()
-
 export const createArrayLinkInterface = <T extends any>([value, setValue]: Link<
   T[]
 >): ArrayLink<T> => {

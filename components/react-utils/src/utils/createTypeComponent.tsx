@@ -1,7 +1,7 @@
 import React from 'react';
 
 const defineType = (components: IComponents, props: any) => {
-  const keys: any[] = Object.keys(components);
+  const keys: any[] = Object.keys(components)
   return (
     keys.find((key: string) => props[key] === true || props[key] === 'true') ||
     keys[0]
