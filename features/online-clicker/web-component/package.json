@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/online-clicker-webcomponent",
-  "version": "0.62.2011",
+  "version": "0.62.2012",
   "proxy": "https://localhost:5000",
   "description": "This is layout system",
   "scripts": {
@@ -38,7 +38,7 @@
     "react-native": "*"
   },
   "devDependencies": {
-    "@rn-cantons/react-utils": "^0.62.2011",
+    "@rn-cantons/react-utils": "^0.62.2012",
     "@types/styled-components": "^5.1.7",
     "html-webpack-plugin": "^5.2.0",
     "ts-loader": "^8.0.17",
