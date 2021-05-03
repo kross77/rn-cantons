@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
-import withDevice from './withDevice'
-import withMultiSize from './withMultiSize'
+import withDevice from './withDevice.web'
+import withMultiSize from './withMultiSize.web'
 import {
   applyProps,
   combineProps,

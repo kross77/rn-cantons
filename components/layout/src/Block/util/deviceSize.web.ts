@@ -1,7 +1,7 @@
-import {Dimensions} from 'react-native'
+
 
 const deviceSize = {
-  current: Dimensions.get('window'),
+  current: {width: window.innerWidth, height: window.innerHeight},
   iPhone4: {width: 320, height: 480},
   iPhoneSE: {width: 320, height: 568},
   iPhone8: {width: 375, height: 667},
