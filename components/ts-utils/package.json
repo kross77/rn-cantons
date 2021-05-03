@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/ts-utils",
-  "version": "0.62.2009",
+  "version": "0.62.2011",
   "description": "This is bottom sheet drag menu. Writed on React native, working on IOS and Android",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
@@ -37,12 +37,12 @@
     "react-native": "*"
   },
   "devDependencies": {
-    "typescript": "4.1.2",
+    "@babel/preset-typescript": "^7.12.13",
     "jest": "^26.6.3",
-    "@babel/preset-typescript": "^7.12.13"
+    "typescript": "4.1.2"
   },
   "dependencies": {
-    "@rn-cantons/layout": "^0.62.2009",
+    "@rn-cantons/layout": "^0.62.2011",
     "uuid": "^8.3.2"
   },
   "publishConfig": {

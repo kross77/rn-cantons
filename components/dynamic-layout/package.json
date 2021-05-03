@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/dynamic-layout",
-  "version": "0.62.2009",
+  "version": "0.62.2011",
   "description": "This is layout system",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",

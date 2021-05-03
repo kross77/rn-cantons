@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/web-notifications-feature",
-  "version": "0.62.2009",
+  "version": "0.62.2011",
   "description": "This is layout system",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
@@ -35,8 +35,8 @@
     "react-native": "*"
   },
   "dependencies": {
-    "@rn-cantons/react-link": "^0.62.2009",
-    "@rn-cantons/ts-utils": "^0.62.2009",
+    "@rn-cantons/react-link": "^0.62.2011",
+    "@rn-cantons/ts-utils": "^0.62.2011",
     "firebase": "8.2.7",
     "jest": "^26.6.3",
     "reselect": "^4.0.0",
@@ -45,7 +45,6 @@
   "devDependencies": {
     "typescript": "4.1.2"
   },
-
   "publishConfig": {
     "access": "public"
   },

@@ -1,13 +1,13 @@
 {
   "name": "web-nextjs",
-  "version": "0.0.1",
+  "version": "0.62.2011",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "components": "0.0.1",
+    "components": "^0.62.2011",
     "next": "10.0.2",
     "next-transpile-modules": "4.1.0",
     "react": "17.0.1",
