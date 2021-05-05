@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/react-link",
-  "version": "0.62.2012",
+  "version": "0.62.2013",
   "description": "This is bottom sheet drag menu. Writed on React native, working on IOS and Android",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
@@ -39,8 +39,8 @@
     "typescript": "4.1.2"
   },
   "dependencies": {
-    "@rn-cantons/layout": "^0.62.2012",
-    "@rn-cantons/react-link": "^0.62.2012",
+    "@rn-cantons/layout": "^0.62.2013",
+    "@rn-cantons/react-link": "^0.62.2013",
     "firebase": "8.2.7",
     "react-firebase-hooks": "2.1.1"
   },

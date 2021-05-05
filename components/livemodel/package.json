@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/livemodel",
-  "version": "0.62.2012",
+  "version": "0.62.2013",
   "description": "This is bottom sheet drag menu. Writed on React native, working on IOS and Android",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
@@ -35,7 +35,7 @@
     "react-native": "*"
   },
   "dependencies": {
-    "@rn-cantons/react-link": "^0.62.2012"
+    "@rn-cantons/react-link": "^0.62.2013"
   },
   "publishConfig": {
     "access": "public"
