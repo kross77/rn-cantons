@@ -30,6 +30,7 @@
     "xcode": "yarn workspace mobile xcode"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.13.0",
     "@react-native-community/eslint-config": "2.0.0",
     "@typescript-eslint/eslint-plugin": "4.8.1",
     "@typescript-eslint/parser": "4.8.1",
