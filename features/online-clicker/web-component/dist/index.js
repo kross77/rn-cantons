@@ -12,11 +12,11 @@ const Wrapper = styled_components_1.default.div `
 const TotalTitle = styled_components_1.default.h2 ``;
 const TotalUsers = styled_components_1.default.h2 ``;
 const ClickButton = styled_components_1.default.button ``;
-const OnlineClicker = ({ click, total, totalUsers }) => {
+const OnlineClicker = ({ click, total, totalUsers, couldClick }) => {
     return (react_1.default.createElement(Wrapper, { className: "clicker-wrapper" },
         react_1.default.createElement(TotalTitle, { className: "clicker-total-count" }, total),
         react_1.default.createElement(TotalUsers, { className: "clicker-total-users" }, totalUsers),
-        react_1.default.createElement(ClickButton, { className: "clicker-button", onClick: click }, "Click")));
+        react_1.default.createElement(ClickButton, { disabled: !couldClick, className: "clicker-button", onClick: click }, "Click")));
 };
 exports.default = OnlineClicker;
 //# sourceMappingURL=index.js.map

@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "@rn-cantons/layout": "^0.62.2013",
+    "react-native-modals": "^0.22.3",
     "reselect": "^4.0.0"
   },
   "publishConfig": {

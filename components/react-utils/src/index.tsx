@@ -16,4 +16,5 @@ export { default as upgrade } from './utils/upgrade'
 export { default as wrap } from './utils/wrap'
 export { default as createTypeComponent } from './utils/createTypeComponent'
 export { default as DelayRender } from './components/DelayRender'
+export * from './utils/storybook'
 
