@@ -1,0 +1,123 @@
+0 silly argv { _: [ 'version' ], lernaVersion: '3.22.1', '$0': 'lerna' }
+1 notice cli v3.22.1
+2 verbose rootPath /Users/akrasouski/clients/ales/rn-cantons-portal
+3 info current version 0.62.2012
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly currentBranch
+7 verbose currentBranch mobietu-production
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream mobietu-production is behind origin/mobietu-production by 0 commit(s) and ahead by 1
+11 silly hasTags
+12 verbose hasTags false
+13 info Assuming all packages changed
+14 verbose updated @rn-cantons/application-form
+15 verbose updated @rn-cantons/bottom-sheet
+16 verbose updated @rn-cantons/category-list
+17 verbose updated @rn-cantons/dynamic-layout
+18 verbose updated @rn-cantons/firebase
+19 verbose updated @rn-cantons/firestore-link
+20 verbose updated @rn-cantons/layout
+21 verbose updated @rn-cantons/livemodel
+22 verbose updated @rn-cantons/modalize
+23 verbose updated @rn-cantons/modals
+24 verbose updated @rn-cantons/react-link
+25 verbose updated @rn-cantons/react-native-utils
+26 verbose updated @rn-cantons/react-utils
+27 verbose updated @rn-cantons/ts-utils
+28 verbose updated @rn-cantons/web-notifications-feature
+29 verbose updated @rn-cantons/online-clicker-functions
+30 verbose updated @rn-cantons/online-clicker-webcomponent
+31 verbose updated components
+32 verbose updated mobile
+33 verbose updated web-cra
+34 verbose updated web-nextjs
+35 verbose updated @projects/mobietu
+36 verbose git-describe undefined => "06e2eaa"
+37 silly git-describe parsed => {"refCount":"22","sha":"06e2eaa","isDirty":false}
+38 info execute Skipping releases
+39 silly lifecycle No script for "preversion" in "myprojectname", continuing
+40 warn ECYCLE Dependency cycles detected, you should fix these!
+40 warn ECYCLE @rn-cantons/layout -> @rn-cantons/react-utils -> @rn-cantons/layout
+40 warn ECYCLE @rn-cantons/react-link -> @rn-cantons/react-link
+41 silly lifecycle No script for "preversion" in "@rn-cantons/dynamic-layout", continuing
+42 silly lifecycle No script for "preversion" in "components", continuing
+43 silly lifecycle No script for "preversion" in "web-cra", continuing
+44 silly lifecycle No script for "version" in "components", continuing
+45 silly lifecycle No script for "preversion" in "mobile", continuing
+46 silly lifecycle No script for "preversion" in "web-nextjs", continuing
+47 silly lifecycle No script for "version" in "@rn-cantons/dynamic-layout", continuing
+48 silly lifecycle No script for "preversion" in "@rn-cantons/layout", continuing
+49 silly lifecycle No script for "preversion" in "@rn-cantons/react-utils", continuing
+50 silly lifecycle No script for "version" in "web-cra", continuing
+51 silly lifecycle No script for "version" in "mobile", continuing
+52 silly lifecycle No script for "version" in "web-nextjs", continuing
+53 silly lifecycle No script for "version" in "@rn-cantons/react-utils", continuing
+54 silly lifecycle No script for "preversion" in "@rn-cantons/online-clicker-webcomponent", continuing
+55 silly lifecycle No script for "version" in "@rn-cantons/layout", continuing
+56 silly lifecycle No script for "preversion" in "@rn-cantons/application-form", continuing
+57 silly lifecycle No script for "preversion" in "@rn-cantons/category-list", continuing
+58 silly lifecycle No script for "preversion" in "@rn-cantons/modals", continuing
+59 silly lifecycle No script for "preversion" in "@rn-cantons/react-native-utils", continuing
+60 silly lifecycle No script for "preversion" in "@rn-cantons/ts-utils", continuing
+61 silly lifecycle No script for "version" in "@rn-cantons/online-clicker-webcomponent", continuing
+62 silly lifecycle No script for "preversion" in "@rn-cantons/react-link", continuing
+63 silly lifecycle No script for "version" in "@rn-cantons/application-form", continuing
+64 silly lifecycle No script for "version" in "@rn-cantons/modals", continuing
+65 silly lifecycle No script for "version" in "@rn-cantons/react-native-utils", continuing
+66 silly lifecycle No script for "version" in "@rn-cantons/category-list", continuing
+67 silly lifecycle No script for "version" in "@rn-cantons/ts-utils", continuing
+68 silly lifecycle No script for "preversion" in "@rn-cantons/online-clicker-functions", continuing
+69 silly lifecycle No script for "version" in "@rn-cantons/react-link", continuing
+70 silly lifecycle No script for "preversion" in "@rn-cantons/bottom-sheet", continuing
+71 silly lifecycle No script for "preversion" in "@rn-cantons/firebase", continuing
+72 silly lifecycle No script for "preversion" in "@rn-cantons/firestore-link", continuing
+73 silly lifecycle No script for "preversion" in "@rn-cantons/livemodel", continuing
+74 silly lifecycle No script for "preversion" in "@rn-cantons/modalize", continuing
+75 silly lifecycle No script for "preversion" in "@rn-cantons/web-notifications-feature", continuing
+76 silly lifecycle No script for "version" in "@rn-cantons/online-clicker-functions", continuing
+77 silly lifecycle No script for "version" in "@rn-cantons/bottom-sheet", continuing
+78 silly lifecycle No script for "version" in "@rn-cantons/firebase", continuing
+79 silly lifecycle No script for "version" in "@rn-cantons/livemodel", continuing
+80 silly lifecycle No script for "version" in "@rn-cantons/modalize", continuing
+81 silly lifecycle No script for "preversion" in "@projects/mobietu", continuing
+82 silly lifecycle No script for "version" in "@rn-cantons/web-notifications-feature", continuing
+83 silly lifecycle No script for "version" in "@rn-cantons/firestore-link", continuing
+84 silly lifecycle No script for "version" in "@projects/mobietu", continuing
+85 silly lifecycle No script for "version" in "myprojectname", continuing
+86 silly gitAdd [
+86 silly gitAdd   'packages/components/package.json',
+86 silly gitAdd   'components/dynamic-layout/package.json',
+86 silly gitAdd   'packages/web-cra/package.json',
+86 silly gitAdd   'packages/mobile/package.json',
+86 silly gitAdd   'packages/web-nextjs/package.json',
+86 silly gitAdd   'components/react-utils/package.json',
+86 silly gitAdd   'components/layout/package.json',
+86 silly gitAdd   'features/online-clicker/web-component/package.json',
+86 silly gitAdd   'components/application-form/package.json',
+86 silly gitAdd   'components/modals/package.json',
+86 silly gitAdd   'components/react-native-utils/package.json',
+86 silly gitAdd   'components/category-list/package.json',
+86 silly gitAdd   'components/ts-utils/package.json',
+86 silly gitAdd   'components/react-link/package.json',
+86 silly gitAdd   'features/online-clicker/functions/package.json',
+86 silly gitAdd   'components/bottom-sheet/package.json',
+86 silly gitAdd   'components/firebase/package.json',
+86 silly gitAdd   'components/livemodel/package.json',
+86 silly gitAdd   'components/modalize/package.json',
+86 silly gitAdd   'features/web-notifications/package.json',
+86 silly gitAdd   'components/firestore-link/package.json',
+86 silly gitAdd   'projects/mobietu-mobile/package.json',
+86 silly gitAdd   'lerna.json'
+86 silly gitAdd ]
+87 error Error: Command failed: git add -- packages/components/package.json components/dynamic-layout/package.json packages/web-cra/package.json packages/mobile/package.json packages/web-nextjs/package.json components/react-utils/package.json components/layout/package.json features/online-clicker/web-component/package.json components/application-form/package.json components/modals/package.json components/react-native-utils/package.json components/category-list/package.json components/ts-utils/package.json components/react-link/package.json features/online-clicker/functions/package.json components/bottom-sheet/package.json components/firebase/package.json components/livemodel/package.json components/modalize/package.json features/web-notifications/package.json components/firestore-link/package.json projects/mobietu-mobile/package.json lerna.json
+87 error The following paths are ignored by one of your .gitignore files:
+87 error projects
+87 error hint: Use -f if you really want to add them.
+87 error hint: Turn this message off by running
+87 error hint: "git config advice.addIgnoredFile false"
+87 error
+87 error     at makeError (/Users/akrasouski/clients/ales/rn-cantons-portal/node_modules/execa/index.js:174:9)
+87 error     at /Users/akrasouski/clients/ales/rn-cantons-portal/node_modules/execa/index.js:278:16
+87 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
