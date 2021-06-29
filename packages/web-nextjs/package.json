@@ -23,5 +23,6 @@
   },
   "peerDependencies": {
     "react-native": "*"
-  }
+  },
+  "gitHead": "478f3240f71c278efe4067376f1c7167cd1bb91f"
 }
