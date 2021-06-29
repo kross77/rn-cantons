@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/online-clicker-functions",
-  "version": "0.62.2013",
+  "version": "0.62.2014",
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
@@ -14,7 +14,7 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "@rn-cantons/ts-utils": "^0.62.2013",
+    "@rn-cantons/ts-utils": "^0.62.2014",
     "firebase-admin": "^9.2.0",
     "firebase-functions": "^3.11.0"
   },

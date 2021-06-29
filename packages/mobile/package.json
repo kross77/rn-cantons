@@ -1,6 +1,6 @@
 {
   "name": "mobile",
-  "version": "0.62.2013",
+  "version": "0.62.2014",
   "private": true,
   "scripts": {
     "android": "concurrently \"yarn start\" \"react-native run-android --no-packager\"",
@@ -12,7 +12,7 @@
     "xcode": "xed ios"
   },
   "dependencies": {
-    "components": "^0.62.2013",
+    "components": "^0.62.2014",
     "react": "17.0.1",
     "react-native": "0.63.3"
   },

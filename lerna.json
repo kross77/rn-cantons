@@ -1,11 +1,9 @@
 {
-  "packages": [
-    "components/*",
-    "nativeComponents/*",
-    "sandbox/*",
-    "projects/*"
-  ],
-  "version": "0.62.2013",
+  "packages": ["components/*", "nativeComponents/*", "sandbox/*", "projects/*"],
+  "version": "0.62.2014",
+  "publishConfig": {
+    "access": "public"
+  },
   "npmClient": "yarn",
   "useWorkspaces": true
 }
