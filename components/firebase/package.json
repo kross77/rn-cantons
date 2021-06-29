@@ -5,7 +5,8 @@
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
     "compile": "tsc -p tsconfig.json",
-    "watch": "tsc -p tsconfig.json --watch"
+    "watch": "tsc -p tsconfig.json --watch",
+    "pk-publish": "npm publish"
   },
   "repository": {
     "type": "git",

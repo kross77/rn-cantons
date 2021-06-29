@@ -7,7 +7,8 @@
     "compile": "tsc -p tsconfig.json",
     "watch": "tsc -p tsconfig.json --watch",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "pk-publish": "npm publish"
   },
   "repository": {
     "type": "git",
