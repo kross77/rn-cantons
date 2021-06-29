@@ -1,6 +1,6 @@
 {
   "name": "@rn-cantons/firebase",
-  "version": "0.62.2014",
+  "version": "0.62.2015",
   "description": "Firebase utils",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
@@ -40,7 +40,7 @@
   },
   "gitHead": "51dcc6170cc76aea064b16bbec60d6d45cacf38f",
   "dependencies": {
-    "@rn-cantons/react-link": "^0.62.2014",
+    "@rn-cantons/react-link": "^0.62.2015",
     "expo-google-sign-in": "^8.1.0",
     "firebase": "8.2.7",
     "geofirex": "^0.1.0",

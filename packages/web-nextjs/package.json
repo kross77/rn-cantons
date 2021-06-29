@@ -1,6 +1,6 @@
 {
   "name": "web-nextjs",
-  "version": "0.62.2014",
+  "version": "0.62.2015",
   "scripts": {
     "dev": "next",
     "build": "next build",

@@ -1,6 +1,6 @@
 {
   "packages": ["components/*", "nativeComponents/*", "sandbox/*", "projects/*"],
-  "version": "0.62.2014",
+  "version": "0.62.2015",
   "publishConfig": {
     "access": "public"
   },
