@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kross77/rn-cantoms"
+    "url": "https://github.com/kross77/rn-cantons"
   },
   "bugs": {
-    "url": "https://github.com/kross77/rn-cantoms/issues"
+    "url": "https://github.com/kross77/rn-cantons/issues"
   },
-  "homepage": "https://github.com/kross77/rn-cantoms",
+  "homepage": "https://github.com/kross77/rn-cantons",
   "files": [
     "dist"
   ],
