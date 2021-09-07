@@ -11,6 +11,7 @@
       "features/*/mobile-component",
       "features/*/tg-bot",
       "components/*",
+      "components/*/example",
       "projects/*",
       "projects/*/functions"
     ],
