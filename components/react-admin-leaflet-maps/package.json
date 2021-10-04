@@ -1,0 +1,60 @@
+{
+  "name": "@rn-cantons/ra-leaflet-maps-input",
+  "version": "0.62.2015",
+  "author": "kross77",
+  "private": false,
+  "main": "dist/index.js",
+  "homepage": "https://github.com/FusionWorks/react-admin-google-maps#readme",
+  "description": "React-admin field/input to show markers on a map.",
+  "license": "ISC",
+  "scripts": {
+    "start": "tsc -p tsconfig.json --watch",
+    "compile": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kross77/react-admin-leaflet-maps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FusionWorks/react-admin-google-maps/issues"
+  },
+  "keywords": [
+    "ra",
+    "react-admin",
+    "react-google-maps",
+    "react-admin input",
+    "react-admin map input",
+    "ra-input",
+    "google, maps"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "dependencies": {
+    "leaflet": "1.6.0",
+    "@rn-cantons/react-link": "0.62.2015",
+    "react-leaflet": "2.7.0",
+    "react-leaflet-search": "2.0.1",
+    "react-scripts": "3.0.1",
+    "react-google-maps": "^9.4.5",
+    "ra-core": "^2.9.2"
+  },
+  "devDependencies": {
+    "typescript": "4.1.2"
+  },
+
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
